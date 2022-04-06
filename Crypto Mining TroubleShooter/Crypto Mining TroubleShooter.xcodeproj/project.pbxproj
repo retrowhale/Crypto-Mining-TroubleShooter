@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341B5AF327FAB0FA00E1047A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341B5AF227FAB0FA00E1047A /* SignUpViewController.swift */; };
+		341B5AF527FABA5D00E1047A /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341B5AF427FABA5D00E1047A /* Networking.swift */; };
 		3422773727C449ED00C037CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422773627C449ED00C037CB /* AppDelegate.swift */; };
 		3422773927C449ED00C037CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422773827C449ED00C037CB /* SceneDelegate.swift */; };
 		3422773B27C449ED00C037CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422773A27C449ED00C037CB /* ViewController.swift */; };
@@ -15,9 +17,13 @@
 		34A9A58F27F134F200402A81 /* BrainSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9A58E27F134F200402A81 /* BrainSolutions.swift */; };
 		34A9A59127F1350F00402A81 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9A59027F1350E00402A81 /* Brain.swift */; };
 		34A9A59527F1611B00402A81 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9A59427F1611B00402A81 /* SecondViewController.swift */; };
+		34AAAB4027FA23FA009DAE4B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AAAB3F27FA23FA009DAE4B /* ThirdViewController.swift */; };
+		34AAAB4227FA3163009DAE4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AAAB4127FA3163009DAE4B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341B5AF227FAB0FA00E1047A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		341B5AF427FABA5D00E1047A /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		3422773327C449ED00C037CB /* Crypto Mining TroubleShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Mining TroubleShooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3422773627C449ED00C037CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3422773827C449ED00C037CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		34A9A58E27F134F200402A81 /* BrainSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSolutions.swift; sourceTree = "<group>"; };
 		34A9A59027F1350E00402A81 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		34A9A59427F1611B00402A81 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		34AAAB3F27FA23FA009DAE4B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		34AAAB4127FA3163009DAE4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,9 @@
 			children = (
 				3422773A27C449ED00C037CB /* ViewController.swift */,
 				34A9A59427F1611B00402A81 /* SecondViewController.swift */,
+				34AAAB3F27FA23FA009DAE4B /* ThirdViewController.swift */,
+				34AAAB4127FA3163009DAE4B /* LoginViewController.swift */,
+				341B5AF227FAB0FA00E1047A /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -93,6 +104,7 @@
 			children = (
 				34A9A58E27F134F200402A81 /* BrainSolutions.swift */,
 				34A9A59027F1350E00402A81 /* Brain.swift */,
+				341B5AF427FABA5D00E1047A /* Networking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,9 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3422773B27C449ED00C037CB /* ViewController.swift in Sources */,
+				341B5AF527FABA5D00E1047A /* Networking.swift in Sources */,
 				34A9A59527F1611B00402A81 /* SecondViewController.swift in Sources */,
 				34A9A59127F1350F00402A81 /* Brain.swift in Sources */,
+				34AAAB4027FA23FA009DAE4B /* ThirdViewController.swift in Sources */,
+				34AAAB4227FA3163009DAE4B /* LoginViewController.swift in Sources */,
 				3422773727C449ED00C037CB /* AppDelegate.swift in Sources */,
+				341B5AF327FAB0FA00E1047A /* SignUpViewController.swift in Sources */,
 				34A9A58F27F134F200402A81 /* BrainSolutions.swift in Sources */,
 				3422773927C449ED00C037CB /* SceneDelegate.swift in Sources */,
 			);
