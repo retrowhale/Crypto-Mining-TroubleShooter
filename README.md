@@ -7,3 +7,5 @@ I tried to make a scalable app where I can put more and more questions and make 
 V.1.1 Update
 -Questions fixed
 -Ethereum Price Call added to Main Screen
+
+<img width="705" alt="retrowhale ca" src="https://user-images.githubusercontent.com/89171572/162048382-0d29c526-a20a-47d6-9b20-373295b28f25.png">
