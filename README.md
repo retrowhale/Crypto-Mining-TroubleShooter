@@ -7,6 +7,7 @@ I tried to make a scalable app where I can put more and more questions and make 
 V.1.1 Update
 -Questions fixed
 -Ethereum Price Call added to Main Screen
+
 V.1.2 Update
 -Webview added
 -More content(more coming)
