@@ -9,14 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     @IBOutlet weak var usdPriceLabel: UILabel!
     @IBOutlet var btnStart: UIButton!
     @IBOutlet var lblDesc: UILabel!
+    @IBOutlet var btnTwo: UIButton!
+    var postList : [PostResponse]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Crypto Mining TroubleShooter"
         fetch()
+        getPostList()
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,6 +30,13 @@ class ViewController: UIViewController {
     // To call Second VC
     @IBAction func btnStartTapped(_ sender: Any){
         let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    //To call Third VC
+    @IBAction func btnTwoTapped(_ sender: Any){
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
+        nextVC.postList = self.postList
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -49,9 +60,22 @@ class ViewController: UIViewController {
                 self.usdPriceLabel.text = "Ethereum Price: $\(self.usdPrice ?? 0.0)"
             }
         }
+        
     }
-    
-
+    func getPostList() {
+        let task = URLSession.shared.dataTask(with: URL(string: "https://retrowhale.ca/linkList")!) { data, response, error in
+            if let data = data {
+                do {
+                    let result = try JSONDecoder().decode(Posts.self, from: data)
+                    self.postList = result.Objects
+                } catch {
+                    debugPrint(data)
+                }
+            }
+        }
+        task.resume()
+        
+    }
 }
 
 

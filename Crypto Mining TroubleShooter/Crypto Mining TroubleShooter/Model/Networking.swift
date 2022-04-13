@@ -9,6 +9,7 @@ import Foundation
 
 
 // API Model
+
 struct EthereumPrice: Codable {
     let usd: Double
     
@@ -16,3 +17,24 @@ struct EthereumPrice: Codable {
         case usd = "USD"
     }
 }
+
+
+
+// Retrowhale.ca model
+
+struct PostList: Codable {
+    
+    var Objects: [Post]?
+    
+}
+
+struct Post: Codable {
+    
+    var link: String?
+    var name: String?
+    
+    
+    
+}
+
+
