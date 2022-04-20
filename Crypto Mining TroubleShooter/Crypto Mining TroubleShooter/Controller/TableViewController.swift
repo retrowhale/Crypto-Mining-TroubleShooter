@@ -41,7 +41,7 @@ extension TableViewController : UITableViewDelegate, UITableViewDataSource {
         let webStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
         let webVC = webStoryBoard.instantiateViewController(withIdentifier: "CustomWebViewController") as! CustomWebViewController
         webVC.url = URL(string: postList?[indexPath.row].link ?? "www.google.com")
-        self.navigationController?.showDetailViewController(webVC, sender: nil)
+        self.navigationController?.pushViewController(webVC, animated: true)
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -49,3 +49,5 @@ extension TableViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+

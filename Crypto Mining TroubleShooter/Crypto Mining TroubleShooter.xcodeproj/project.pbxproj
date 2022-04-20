@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34055CD62810A48B00DC65C0 /* Crypto Mining TroubleShooter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Crypto Mining TroubleShooter.entitlements"; sourceTree = "<group>"; };
 		340E828727FE698600A23BEB /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		340E828927FECBF600A23BEB /* RetroWhaleCa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroWhaleCa.swift; sourceTree = "<group>"; };
 		340E828B28076D3E00A23BEB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		3422773527C449ED00C037CB /* Crypto Mining TroubleShooter */ = {
 			isa = PBXGroup;
 			children = (
+				34055CD62810A48B00DC65C0 /* Crypto Mining TroubleShooter.entitlements */,
 				3422773627C449ED00C037CB /* AppDelegate.swift */,
 				3422773827C449ED00C037CB /* SceneDelegate.swift */,
 				34A9A58D27F134E000402A81 /* Model */,
@@ -94,8 +96,6 @@
 				34A9A59427F1611B00402A81 /* SecondViewController.swift */,
 				340E828B28076D3E00A23BEB /* TableViewController.swift */,
 				340E828D28076E5200A23BEB /* DataCell.swift */,
-				340E828E28076E5200A23BEB /* DataCell.xib */,
-				340E82912807714500A23BEB /* PostResponse.swift */,
 				342876CB280777A100CF4866 /* CustomWebViewController.swift */,
 			);
 			path = Controller;
@@ -105,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3422773C27C449ED00C037CB /* Main.storyboard */,
+				340E828E28076E5200A23BEB /* DataCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +118,7 @@
 				341B5AF427FABA5D00E1047A /* Networking.swift */,
 				340E828727FE698600A23BEB /* CellData.swift */,
 				340E828927FECBF600A23BEB /* RetroWhaleCa.swift */,
+				340E82912807714500A23BEB /* PostResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,16 +347,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Crypto Mining TroubleShooter/Crypto Mining TroubleShooter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D6L69DDKK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Crypto Mining TroubleShooter/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = TroubleShooter;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -363,9 +368,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.retrowhale.Crypto-Mining-TroubleShooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,16 +383,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Crypto Mining TroubleShooter/Crypto Mining TroubleShooter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D6L69DDKK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Crypto Mining TroubleShooter/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = TroubleShooter;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -395,9 +404,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.retrowhale.Crypto-Mining-TroubleShooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
