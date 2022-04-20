@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KhG-FQ-Zr5">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides dynamicTypePreference="2"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Crypto_Mining_TroubleShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="83u-O9-V2w">
+                                <rect key="frame" x="16" y="104" width="396" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR9-iY-LbG" userLabel="UsdPrice">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.93211156129999995" green="0.78821766380000002" blue="0.95511215930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hnn-GB-j5G">
+                                        <rect key="frame" x="0.0" y="58" width="396" height="628"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Here to help! Algorithmic approach to solve the problems you face on your mining rig!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQO-e9-e8k">
+                                                <rect key="frame" x="0.0" y="0.0" width="396" height="314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.9624019265" green="0.7811124921" blue="0.97022753949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="oTc-YH-7Qr">
+                                                <rect key="frame" x="0.0" y="314" width="396" height="314"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-QG-pJp">
+                                        <rect key="frame" x="0.0" y="694" width="396" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKd-fh-6pp">
+                                                <rect key="frame" x="0.0" y="0.0" width="396" height="35.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Latest News"/>
+                                                <connections>
+                                                    <action selector="btnTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjD-zZ-ExJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gls-rg-JcD">
+                                                <rect key="frame" x="0.0" y="44.666666666666629" width="396" height="35.333333333333343"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Let's Start!">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="gray">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Let's Start!">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.63002914190000003" green="0.57788681980000001" blue="0.89993441100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnStartTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3z-DW-SHW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="sSO-jf-57Z"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1505560279" green="0.162439853" blue="0.42549884319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="83u-O9-V2w" secondAttribute="trailing" constant="16" id="3ew-jB-vtN"/>
+                            <constraint firstItem="83u-O9-V2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L5g-gV-Gfg"/>
+                            <constraint firstItem="83u-O9-V2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="VXq-e8-IvV"/>
+                            <constraint firstAttribute="bottom" secondItem="83u-O9-V2w" secondAttribute="bottom" constant="48" id="wqH-ZC-8hM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crypto Mining TroubleShooter" id="As9-Uk-h8z"/>
+                    <connections>
+                        <outlet property="btnStart" destination="Gls-rg-JcD" id="Hji-Mz-hka"/>
+                        <outlet property="btnTwo" destination="PKd-fh-6pp" id="W7W-bX-seH"/>
+                        <outlet property="lblDesc" destination="gQO-e9-e8k" id="xA8-t7-yZy"/>
+                        <outlet property="usdPriceLabel" destination="fR9-iY-LbG" id="Tnn-UX-kbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="117"/>
+        </scene>
+        <!--SecondViewController-->
+        <scene sceneID="eze-Hp-vnQ">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" title="SecondViewController" id="dh7-u4-FTV" customClass="SecondViewController" customModule="Crypto_Mining_TroubleShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4x1-R1-KVU">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ska-1a-Qx5">
+                                <rect key="frame" x="16" y="60" width="396" height="816"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="nje-cF-bgv" userLabel="solutionLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="728"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.93211156129999995" green="0.78821766380000002" blue="0.95511215930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Yq-Is-U1E">
+                                        <rect key="frame" x="0.0" y="736" width="396" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-Jo-Cwb">
+                                                <rect key="frame" x="0.0" y="0.0" width="396" height="36"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Yes! 👍">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.63002914190000003" green="0.57788681980000001" blue="0.89993441100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="dh7-u4-FTV" eventType="touchUpInside" id="Gfm-Ar-5r6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es8-gD-XWD">
+                                                <rect key="frame" x="0.0" y="44" width="396" height="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="No! 👎">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="gray" title="No! 👎">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.63002914190000003" green="0.57788681980000001" blue="0.89993441100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="dh7-u4-FTV" eventType="touchUpInside" id="fvA-jm-gzt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="1y7-tr-5MR"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="df9-F0-3kR"/>
+                        <color key="backgroundColor" red="0.1541361809" green="0.16004046799999999" blue="0.41173174979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="df9-F0-3kR" firstAttribute="bottom" secondItem="ska-1a-Qx5" secondAttribute="bottom" constant="16" id="I5r-KH-H25"/>
+                            <constraint firstItem="ska-1a-Qx5" firstAttribute="top" secondItem="df9-F0-3kR" secondAttribute="top" constant="16" id="RYd-UO-mkc"/>
+                            <constraint firstItem="ska-1a-Qx5" firstAttribute="leading" secondItem="df9-F0-3kR" secondAttribute="leading" constant="16" id="eNv-HF-vAd"/>
+                            <constraint firstItem="df9-F0-3kR" firstAttribute="trailing" secondItem="ska-1a-Qx5" secondAttribute="trailing" constant="16" id="k5k-kV-aHd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crypto Mining TroubleShooter" id="nsz-d2-lYN"/>
+                    <connections>
+                        <outlet property="choice1Button" destination="y7q-Jo-Cwb" id="B8m-Jh-gVM"/>
+                        <outlet property="choice2Button" destination="es8-gD-XWD" id="O5C-vY-ALm"/>
+                        <outlet property="solutionLabel" destination="nje-cF-bgv" id="f78-Tt-M05"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBH-3P-Zs5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="117"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="o9T-3q-Z0g">
+            <objects>
+                <viewController storyboardIdentifier="TableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J1L-tB-Avw" customClass="TableViewController" customModule="Crypto_Mining_TroubleShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YzI-Qp-0e6">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lL5-do-VIS">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Itp-HG-dad"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lL5-do-VIS" firstAttribute="leading" secondItem="Itp-HG-dad" secondAttribute="leading" id="MPV-sg-7j2"/>
+                            <constraint firstItem="Itp-HG-dad" firstAttribute="bottom" secondItem="lL5-do-VIS" secondAttribute="bottom" id="RaT-MZ-zeV"/>
+                            <constraint firstItem="Itp-HG-dad" firstAttribute="trailing" secondItem="lL5-do-VIS" secondAttribute="trailing" id="gEy-VO-lTN"/>
+                            <constraint firstItem="lL5-do-VIS" firstAttribute="top" secondItem="Itp-HG-dad" secondAttribute="top" id="xpe-zt-V4J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="lL5-do-VIS" id="j6u-M1-GZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irf-US-a7v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2541.5887850467288" y="116.63066954643629"/>
+        </scene>
+        <!--Custom Web View Controller-->
+        <scene sceneID="inu-SD-n1t">
+            <objects>
+                <viewController storyboardIdentifier="CustomWebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sId-CQ-xBe" customClass="CustomWebViewController" customModule="Crypto_Mining_TroubleShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LrL-mZ-c8V">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoU-r5-ITx">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="My8-Vr-Gvr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="My8-Vr-Gvr" firstAttribute="bottom" secondItem="qoU-r5-ITx" secondAttribute="bottom" id="59o-X8-65R"/>
+                            <constraint firstItem="qoU-r5-ITx" firstAttribute="top" secondItem="My8-Vr-Gvr" secondAttribute="top" id="VL3-JT-X87"/>
+                            <constraint firstItem="qoU-r5-ITx" firstAttribute="leading" secondItem="My8-Vr-Gvr" secondAttribute="leading" id="j4L-Fw-4Hm"/>
+                            <constraint firstItem="My8-Vr-Gvr" firstAttribute="trailing" secondItem="qoU-r5-ITx" secondAttribute="trailing" id="t0w-qJ-ahY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="qoU-r5-ITx" id="R8F-8Y-oFy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgR-uN-36v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3251" y="117"/>
+        </scene>
+        <!--NavigationController-->
+        <scene sceneID="wiI-hi-Jks">
+            <objects>
+                <navigationController title="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="KhG-FQ-Zr5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J3b-DX-zey">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KN5-6f-fLt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qag-1T-P9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="1080" height="1080"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
