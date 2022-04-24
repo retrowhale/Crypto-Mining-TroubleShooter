@@ -78,7 +78,7 @@
                                                         </fragment>
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" red="0.63002914190000003" green="0.57788681980000001" blue="0.89993441100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="baseBackgroundColor" red="0.64123678210000001" green="0.57410734890000004" blue="0.92233252529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnStartTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3z-DW-SHW"/>
