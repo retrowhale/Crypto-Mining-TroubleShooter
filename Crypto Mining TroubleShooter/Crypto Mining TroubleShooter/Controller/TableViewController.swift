@@ -19,7 +19,6 @@ class TableViewController: UIViewController {
         tableView.dataSource = self
         let nib = UINib.init(nibName: "DataCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "dataCell")
-        // Do any additional setup after loading the view.
     }
     
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		340E828827FE698600A23BEB /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E828727FE698600A23BEB /* CellData.swift */; };
-		340E828A27FECBF600A23BEB /* RetroWhaleCa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E828927FECBF600A23BEB /* RetroWhaleCa.swift */; };
 		340E828C28076D3E00A23BEB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E828B28076D3E00A23BEB /* TableViewController.swift */; };
 		340E828F28076E5200A23BEB /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E828D28076E5200A23BEB /* DataCell.swift */; };
 		340E829028076E5200A23BEB /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340E828E28076E5200A23BEB /* DataCell.xib */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		34055CD62810A48B00DC65C0 /* Crypto Mining TroubleShooter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Crypto Mining TroubleShooter.entitlements"; sourceTree = "<group>"; };
 		340E828727FE698600A23BEB /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
-		340E828927FECBF600A23BEB /* RetroWhaleCa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroWhaleCa.swift; sourceTree = "<group>"; };
 		340E828B28076D3E00A23BEB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		340E828D28076E5200A23BEB /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 		340E828E28076E5200A23BEB /* DataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				34A9A59027F1350E00402A81 /* Brain.swift */,
 				341B5AF427FABA5D00E1047A /* Networking.swift */,
 				340E828727FE698600A23BEB /* CellData.swift */,
-				340E828927FECBF600A23BEB /* RetroWhaleCa.swift */,
 				340E82912807714500A23BEB /* PostResponse.swift */,
 			);
 			path = Model;
@@ -197,7 +194,6 @@
 				3422773B27C449ED00C037CB /* ViewController.swift in Sources */,
 				342876CC280777A100CF4866 /* CustomWebViewController.swift in Sources */,
 				341B5AF527FABA5D00E1047A /* Networking.swift in Sources */,
-				340E828A27FECBF600A23BEB /* RetroWhaleCa.swift in Sources */,
 				340E828C28076D3E00A23BEB /* TableViewController.swift in Sources */,
 				340E828827FE698600A23BEB /* CellData.swift in Sources */,
 				34A9A59527F1611B00402A81 /* SecondViewController.swift in Sources */,

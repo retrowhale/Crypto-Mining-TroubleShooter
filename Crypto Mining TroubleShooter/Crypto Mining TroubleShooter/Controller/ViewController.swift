@@ -15,12 +15,20 @@ class ViewController: UIViewController {
     @IBOutlet var lblDesc: UILabel!
     @IBOutlet var btnTwo: UIButton!
     var postList : [PostResponse]?
+    var spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Crypto Mining TroubleShooter"
         fetch()
         getPostList()
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(spinner)
+        spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,10 +43,16 @@ class ViewController: UIViewController {
     
     //To call Third VC
     @IBAction func btnTwoTapped(_ sender: Any){
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
-        nextVC.postList = self.postList
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        if self.postList != nil && !self.postList!.isEmpty{
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
+            nextVC.postList = self.postList
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }else {
+            getPostList()
+        }
+        
     }
+    
     
     // To call API
     func fetch() {
@@ -63,6 +77,7 @@ class ViewController: UIViewController {
         
     }
     func getPostList() {
+        spinner.startAnimating()
         let task = URLSession.shared.dataTask(with: URL(string: "https://retrowhale.ca/linkList")!) { data, response, error in
             if let data = data {
                 do {
@@ -72,9 +87,19 @@ class ViewController: UIViewController {
                     debugPrint(data)
                 }
             }
+            if error != nil {
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+                
+            }
+            DispatchQueue.main.async {
+                self.spinner.stopAnimating()
+            }
         }
         task.resume()
-        
     }
 }
 
