@@ -95,10 +95,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1505560279" green="0.162439853" blue="0.42549884319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="83u-O9-V2w" secondAttribute="trailing" constant="16" id="3ew-jB-vtN"/>
-                            <constraint firstItem="83u-O9-V2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L5g-gV-Gfg"/>
-                            <constraint firstItem="83u-O9-V2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="VXq-e8-IvV"/>
-                            <constraint firstAttribute="bottom" secondItem="83u-O9-V2w" secondAttribute="bottom" constant="48" id="wqH-ZC-8hM"/>
+                            <constraint firstAttribute="trailing" secondItem="83u-O9-V2w" secondAttribute="trailing" constant="16" id="3ew-jB-vtN" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="83u-O9-V2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L5g-gV-Gfg" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="83u-O9-V2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="VXq-e8-IvV" customClass="AdaptedConstraint"/>
+                            <constraint firstAttribute="bottom" secondItem="83u-O9-V2w" secondAttribute="bottom" constant="48" id="wqH-ZC-8hM" customClass="AdaptedConstraint"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="As9-Uk-h8z"/>
@@ -130,7 +130,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need help?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th1-x9-dng">
                                 <rect key="frame" x="325.66666666666669" y="64" width="86.333333333333314" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="kzV-Dz-rIV"/>
+                                    <constraint firstAttribute="height" constant="50" id="kzV-Dz-rIV" customClass="AdaptedConstraint"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,17 +181,17 @@
                         <viewLayoutGuide key="safeArea" id="df9-F0-3kR"/>
                         <color key="backgroundColor" red="0.1541361809" green="0.16004046799999999" blue="0.41173174979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="df9-F0-3kR" firstAttribute="trailing" secondItem="6Yq-Is-U1E" secondAttribute="trailing" constant="16" id="2ZN-T0-nEL"/>
-                            <constraint firstItem="th1-x9-dng" firstAttribute="trailing" secondItem="nje-cF-bgv" secondAttribute="trailing" id="2iN-rr-4wz"/>
-                            <constraint firstItem="6Yq-Is-U1E" firstAttribute="leading" secondItem="df9-F0-3kR" secondAttribute="leading" constant="16" id="5L4-6U-Rcd"/>
-                            <constraint firstItem="df9-F0-3kR" firstAttribute="bottom" secondItem="6Yq-Is-U1E" secondAttribute="bottom" constant="30" id="CtW-Tr-Zie"/>
-                            <constraint firstItem="df9-F0-3kR" firstAttribute="trailing" secondItem="nje-cF-bgv" secondAttribute="trailing" constant="16" id="Poh-aI-9Bi"/>
-                            <constraint firstItem="iXN-zo-EdN" firstAttribute="top" secondItem="th1-x9-dng" secondAttribute="top" id="RLi-eO-X9U"/>
-                            <constraint firstItem="nje-cF-bgv" firstAttribute="bottom" secondItem="df9-F0-3kR" secondAttribute="centerY" id="byc-sh-Wwx"/>
-                            <constraint firstItem="th1-x9-dng" firstAttribute="leading" secondItem="iXN-zo-EdN" secondAttribute="trailing" constant="8" id="gRx-LI-7WB"/>
-                            <constraint firstItem="iXN-zo-EdN" firstAttribute="top" secondItem="df9-F0-3kR" secondAttribute="top" constant="20" id="kfO-Hz-Te3"/>
-                            <constraint firstItem="iXN-zo-EdN" firstAttribute="bottom" secondItem="th1-x9-dng" secondAttribute="bottom" id="pCn-WI-Kz2"/>
-                            <constraint firstItem="nje-cF-bgv" firstAttribute="leading" secondItem="df9-F0-3kR" secondAttribute="leading" constant="16" id="yOa-S3-Hg3"/>
+                            <constraint firstItem="df9-F0-3kR" firstAttribute="trailing" secondItem="6Yq-Is-U1E" secondAttribute="trailing" constant="16" id="2ZN-T0-nEL" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="th1-x9-dng" firstAttribute="trailing" secondItem="nje-cF-bgv" secondAttribute="trailing" id="2iN-rr-4wz" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="6Yq-Is-U1E" firstAttribute="leading" secondItem="df9-F0-3kR" secondAttribute="leading" constant="16" id="5L4-6U-Rcd" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="df9-F0-3kR" firstAttribute="bottom" secondItem="6Yq-Is-U1E" secondAttribute="bottom" constant="30" id="CtW-Tr-Zie" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="df9-F0-3kR" firstAttribute="trailing" secondItem="nje-cF-bgv" secondAttribute="trailing" constant="16" id="Poh-aI-9Bi" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="iXN-zo-EdN" firstAttribute="top" secondItem="th1-x9-dng" secondAttribute="top" id="RLi-eO-X9U" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="nje-cF-bgv" firstAttribute="bottom" secondItem="df9-F0-3kR" secondAttribute="centerY" id="byc-sh-Wwx" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="th1-x9-dng" firstAttribute="leading" secondItem="iXN-zo-EdN" secondAttribute="trailing" constant="8" id="gRx-LI-7WB" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="iXN-zo-EdN" firstAttribute="top" secondItem="df9-F0-3kR" secondAttribute="top" constant="20" id="kfO-Hz-Te3" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="iXN-zo-EdN" firstAttribute="bottom" secondItem="th1-x9-dng" secondAttribute="bottom" id="pCn-WI-Kz2" customClass="AdaptedConstraint"/>
+                            <constraint firstItem="nje-cF-bgv" firstAttribute="leading" secondItem="df9-F0-3kR" secondAttribute="leading" constant="16" id="yOa-S3-Hg3" customClass="AdaptedConstraint"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Crypto Mining TroubleShooter" id="nsz-d2-lYN"/>
