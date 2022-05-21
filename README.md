@@ -16,4 +16,9 @@ V.1.2 Update
 
 -More content(more coming)
 
-<img width="705" alt="retrowhale ca" src="https://user-images.githubusercontent.com/89171572/162048382-0d29c526-a20a-47d6-9b20-373295b28f25.png">
+v.1.3 Update
+-Fix on the issues where user would get stuck in webview in older iphones
+
+-Mac/Mac Catalyst users can use the app now!
+
+![Screen Shot 2022-04-20 at 2 07 58 PM](https://user-images.githubusercontent.com/89171572/164998004-4f490949-18ef-4fb7-ae11-0dec4048ef50.png)
