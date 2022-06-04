@@ -37,7 +37,7 @@ class SecondViewController: UIViewController {
     @objc func goToInfoPage() {
         let webStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
         let webVC = webStoryBoard.instantiateViewController(withIdentifier: "CustomWebViewController") as! CustomWebViewController
-        webVC.url = URL(string: "https://www.google.com")
+        webVC.url = URL(string: "https://retrowhale.ca/contact/")
         self.navigationController?.pushViewController(webVC, animated: true)
     }
     
