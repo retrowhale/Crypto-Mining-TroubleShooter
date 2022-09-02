@@ -19,10 +19,10 @@
 		3422773E27C449ED00C037CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3422773C27C449ED00C037CB /* Main.storyboard */; };
 		3422774327C449F100C037CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3422774227C449F100C037CB /* Assets.xcassets */; };
 		342876CC280777A100CF4866 /* CustomWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342876CB280777A100CF4866 /* CustomWebViewController.swift */; };
+		34A5E8DB28C171A8002D1ECE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A5E8DA28C171A8002D1ECE /* Launch Screen.storyboard */; };
 		34A9A58F27F134F200402A81 /* BrainSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9A58E27F134F200402A81 /* BrainSolutions.swift */; };
 		34A9A59127F1350F00402A81 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9A59027F1350E00402A81 /* Brain.swift */; };
 		34A9A59527F1611B00402A81 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9A59427F1611B00402A81 /* SecondViewController.swift */; };
-		34C7F2C3282F771F00D89768 /* Constraint in Resources */ = {isa = PBXBuildFile; fileRef = 34C7F2C2282F771F00D89768 /* Constraint */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +41,10 @@
 		3422774227C449F100C037CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3422774727C449F100C037CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342876CB280777A100CF4866 /* CustomWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebViewController.swift; sourceTree = "<group>"; };
+		34A5E8DA28C171A8002D1ECE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		34A9A58E27F134F200402A81 /* BrainSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSolutions.swift; sourceTree = "<group>"; };
 		34A9A59027F1350E00402A81 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		34A9A59427F1611B00402A81 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		34C7F2C2282F771F00D89768 /* Constraint */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Constraint; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 				34A9A58D27F134E000402A81 /* Model */,
 				34A9A58C27F134B500402A81 /* View */,
 				34A9A58B27F134A400402A81 /* Controller */,
-				34C7F2C2282F771F00D89768 /* Constraint */,
 				3422774227C449F100C037CB /* Assets.xcassets */,
 				3422774727C449F100C037CB /* Info.plist */,
 			);
@@ -107,6 +106,7 @@
 			children = (
 				3422773C27C449ED00C037CB /* Main.storyboard */,
 				340E828E28076E5200A23BEB /* DataCell.xib */,
+				34A5E8DA28C171A8002D1ECE /* Launch Screen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,8 +183,8 @@
 			files = (
 				3422774327C449F100C037CB /* Assets.xcassets in Resources */,
 				340E829028076E5200A23BEB /* DataCell.xib in Resources */,
+				34A5E8DB28C171A8002D1ECE /* Launch Screen.storyboard in Resources */,
 				3422773E27C449ED00C037CB /* Main.storyboard in Resources */,
-				34C7F2C3282F771F00D89768 /* Constraint in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +357,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = TroubleShooter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -368,7 +368,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.retrowhale.Crypto-Mining-TroubleShooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -393,7 +393,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = TroubleShooter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -404,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.retrowhale.Crypto-Mining-TroubleShooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;

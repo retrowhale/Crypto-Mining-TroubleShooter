@@ -13,11 +13,8 @@ struct PostResponse : Codable {
     var name : String?
     var link : String?
     
-    
 }
 
 struct Posts : Codable {
-    
     var Objects : [PostResponse]
-    
 }

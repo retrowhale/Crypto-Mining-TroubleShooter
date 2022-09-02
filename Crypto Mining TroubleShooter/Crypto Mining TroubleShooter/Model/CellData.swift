@@ -14,13 +14,9 @@ struct CellData {
         CellTitle(title: "Crypto Issues"),
         CellTitle(title: "Polisss")
     ]
-    
 }
-
-
 
 
 struct CellTitle {
     let title: String
-    
 }

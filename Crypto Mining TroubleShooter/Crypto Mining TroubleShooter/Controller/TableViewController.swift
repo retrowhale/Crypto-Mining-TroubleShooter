@@ -19,10 +19,9 @@ class TableViewController: UIViewController {
         tableView.dataSource = self
         let nib = UINib.init(nibName: "DataCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "dataCell")
+        // Do any additional setup after loading the view.
     }
     
-
-
 }
 
 extension TableViewController : UITableViewDelegate, UITableViewDataSource {
@@ -43,10 +42,8 @@ extension TableViewController : UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.pushViewController(webVC, animated: true)
         
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
 }
-
-
